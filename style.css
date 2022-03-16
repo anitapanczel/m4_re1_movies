@@ -1,0 +1,164 @@
+:root {
+    --primary: #242d38;
+    --secondary: #efd592;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0;
+}
+
+main,
+section {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.topnav {
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 100;
+    position: fixed;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.brand {
+    flex: 85%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.material-icons {
+    flex: 15%;
+    text-align: right;
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    margin: 90px 20px 0px 20px;
+    padding: 40px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    width: 400px;
+    min-height: 400px;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.sub {
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary);
+}
+
+.text {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    border: 1px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.button {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: 60px;
+    width: calc(100% - 80px);
+    font-size: 14px;
+    border: 1px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.buttonText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+@media only screen and (max-width: 600px) {
+    .brand {
+        font-size: 16px;
+    }
+}
